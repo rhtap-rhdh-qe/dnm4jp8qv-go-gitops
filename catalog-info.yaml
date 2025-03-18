@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: dnm4jp8qv-go-gitops
+  description: This is GitOps manifest for dnm4jp8qv-go   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=dnm4jp8qv-go
+    backstage.io/kubernetes-id: dnm4jp8qv-go 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: dnm4jp8qv-go   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:dnm4jp8qv-go

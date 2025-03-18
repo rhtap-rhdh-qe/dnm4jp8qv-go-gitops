@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: dnm4jp8qv-go-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/dnm4jp8qv-go
